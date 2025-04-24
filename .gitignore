@@ -1,0 +1,10 @@
+**/*.pyc
+birdr/db.sqlite3
+birdr/settings/local.py
+birdr/settings/production.py
+.idea
+birdr.sql
+
+**/__pycache__
+
+.env
