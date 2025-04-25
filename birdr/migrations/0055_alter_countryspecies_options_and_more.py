@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0054_update_reaction'),
+        ('birdr', '0054_update_reaction'),
     ]
 
     operations = [

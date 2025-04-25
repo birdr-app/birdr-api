@@ -109,7 +109,7 @@ data = [{"Code": "AF", "Name": "Afghanistan"}, {"Code": "AX", "Name": "\u00c5lan
 
 
 def create_countries(apps, schema_editor):
-    Country = apps.get_model('', 'Country')
+    Country = apps.get_model('birdr', 'Country')
     for country in data:
         Country.objects.update_or_create(
             code=country['Code'],
@@ -121,7 +121,7 @@ def create_countries(apps, schema_editor):
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('', '0003_species_code'),
+        ('birdr', '0003_species_code'),
     ]
 
     operations = [

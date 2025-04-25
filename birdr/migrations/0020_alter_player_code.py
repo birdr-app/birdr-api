@@ -7,7 +7,7 @@ import uuid
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0019_alter_player_game'),
+        ('birdr', '0019_alter_player_game'),
     ]
 
     operations = [

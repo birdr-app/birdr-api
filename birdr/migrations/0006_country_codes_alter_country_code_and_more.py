@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0005_alter_country_options_alter_species_options_and_more'),
+        ('birdr', '0005_alter_country_options_alter_species_options_and_more'),
     ]
 
     operations = [

@@ -4,6 +4,7 @@ birdr/settings/local.py
 birdr/settings/production.py
 .idea
 birdr.sql
+.vscode
 
 **/__pycache__
 

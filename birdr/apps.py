@@ -1,8 +1,8 @@
 from django.apps import AppConfig
 
-class Config(AppConfig):
+class BirdrConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = ''
+    name = 'birdr'
 
     def ready(self):
-        import .signals  # noqa 
+        from .signals import create_initial_country_game  # noqa 

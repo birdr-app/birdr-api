@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0026_rename_publications_question_options'),
+        ('birdr', '0026_rename_publications_question_options'),
     ]
 
     operations = [

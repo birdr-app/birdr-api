@@ -4,8 +4,8 @@ from django.db import migrations
 
 
 def migrate_answers(apps, schema_editor):
-    Answer = apps.get_model('', 'Answer')
-    PlayerScore = apps.get_model('', 'PlayerScore')
+    Answer = apps.get_model('birdr', 'Answer')
+    PlayerScore = apps.get_model('birdr', 'PlayerScore')
 
     for answer in Answer.objects.all():
         player_score = PlayerScore.objects.filter(
@@ -20,7 +20,7 @@ def migrate_answers(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0043_alter_answer_unique_together_answer_player_score_and_more'),
+        ('birdr', '0043_alter_answer_unique_together_answer_player_score_and_more'),
     ]
 
     operations = [

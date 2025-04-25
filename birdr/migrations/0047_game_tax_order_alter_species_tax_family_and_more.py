@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0046_species_tax_family_species_tax_order'),
+        ('birdr', '0046_species_tax_family_species_tax_order'),
     ]
 
     operations = [

@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0064_merge_20250309_0700'),
+        ('birdr', '0064_merge_20250309_0700'),
     ]
 
     operations = [

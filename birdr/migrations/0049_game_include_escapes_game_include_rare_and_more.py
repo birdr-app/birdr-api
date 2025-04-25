@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0048_countryspecies_status'),
+        ('birdr', '0048_countryspecies_status'),
     ]
 
     operations = [

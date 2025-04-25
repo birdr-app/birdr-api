@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0057_challengelevel_tax_order'),
+        ('birdr', '0057_challengelevel_tax_order'),
     ]
 
     operations = [

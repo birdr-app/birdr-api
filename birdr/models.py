@@ -35,9 +35,9 @@ class Country(models.Model):
 
 class Question(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    game = models.ForeignKey('.Game', related_name='questions', on_delete=models.CASCADE)
-    species = models.ForeignKey('.Species', related_name='questions', on_delete=models.CASCADE)
-    options = models.ManyToManyField('.Species', through='.QuestionOption')
+    game = models.ForeignKey('birdr.Game', related_name='questions', on_delete=models.CASCADE)
+    species = models.ForeignKey('birdr.Species', related_name='questions', on_delete=models.CASCADE)
+    options = models.ManyToManyField('birdr.Species', through='birdr.QuestionOption')
     number = models.IntegerField(default=0)
     errors = models.IntegerField(default=0)
     done = models.BooleanField(default=False)
@@ -48,8 +48,8 @@ class Question(models.Model):
 
 
 class QuestionOption(models.Model):
-    question = models.ForeignKey('.Question', on_delete=models.CASCADE)
-    species = models.ForeignKey('.Species', on_delete=models.CASCADE)
+    question = models.ForeignKey('birdr.Question', on_delete=models.CASCADE)
+    species = models.ForeignKey('birdr.Species', on_delete=models.CASCADE)
     order = models.PositiveIntegerField()
 
     class Meta:
@@ -63,7 +63,7 @@ class Game(models.Model):
         ('audio', 'Audio'),
     ]
 
-    country = models.ForeignKey('.Country', on_delete=models.SET_NULL, null=True)
+    country = models.ForeignKey('birdr.Country', on_delete=models.SET_NULL, null=True)
     language = models.CharField(max_length=100, default='en')
     token = ShortUUIDField(
         length=8,
@@ -78,7 +78,7 @@ class Game(models.Model):
     repeat = models.BooleanField(default=False)
     include_rare = models.BooleanField(default=True)
     include_escapes = models.BooleanField(default=False)
-    host = models.ForeignKey('.Player', null=True, related_name='host', on_delete=models.CASCADE)
+    host = models.ForeignKey('birdr.Player', null=True, related_name='host', on_delete=models.CASCADE)
     tax_order = models.CharField(
         'Taxonomic order',
         help_text='Only show birds from this order',
@@ -216,8 +216,8 @@ class Game(models.Model):
 
 
 class CountryBadges(models.Model):
-    player = models.ForeignKey('.Player', on_delete=models.CASCADE)
-    country = models.ForeignKey('.Country', on_delete=models.CASCADE)
+    player = models.ForeignKey('birdr.Player', on_delete=models.CASCADE)
+    country = models.ForeignKey('birdr.Country', on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
 
 
@@ -326,9 +326,9 @@ class PlayerScore(models.Model):
 
 class Answer(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    question = models.ForeignKey('.Question', related_name='answers', on_delete=models.CASCADE)
-    player_score = models.ForeignKey('.PlayerScore', null=True, related_name='answers', on_delete=models.CASCADE)
-    answer = models.ForeignKey('.Species', related_name='answer', on_delete=models.CASCADE)
+    question = models.ForeignKey('birdr.Question', related_name='answers', on_delete=models.CASCADE)
+    player_score = models.ForeignKey('birdr.PlayerScore', null=True, related_name='answers', on_delete=models.CASCADE)
+    answer = models.ForeignKey('birdr.Species', related_name='answer', on_delete=models.CASCADE)
     correct = models.BooleanField(default=False)
     score = models.IntegerField(default=0)
 

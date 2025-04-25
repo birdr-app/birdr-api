@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0035_remove_player_is_host_game_host'),
+        ('birdr', '0035_remove_player_is_host_game_host'),
     ]
 
     operations = [

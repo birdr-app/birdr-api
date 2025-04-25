@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('', '0006_country_codes_alter_country_code_and_more'),
+        ('birdr', '0006_country_codes_alter_country_code_and_more'),
     ]
 
     operations = [

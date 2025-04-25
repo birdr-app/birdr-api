@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0025_question_publications_delete_questionoption'),
+        ('birdr', '0025_question_publications_delete_questionoption'),
     ]
 
     operations = [

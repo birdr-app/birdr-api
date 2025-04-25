@@ -7,7 +7,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0038_rename_option_questionoption_question'),
+        ('birdr', '0038_rename_option_questionoption_question'),
     ]
 
     operations = [

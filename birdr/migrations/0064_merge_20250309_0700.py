@@ -6,8 +6,8 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0055_species_tax_family_en'),
-        ('', '0063_alter_countrygame_status'),
+        ('birdr', '0055_species_tax_family_en'),
+        ('birdr', '0063_alter_countrygame_status'),
     ]
 
     operations = [

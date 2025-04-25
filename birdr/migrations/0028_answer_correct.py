@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0027_player_language_alter_countryspecies_country_and_more'),
+        ('birdr', '0027_player_language_alter_countryspecies_country_and_more'),
     ]
 
     operations = [

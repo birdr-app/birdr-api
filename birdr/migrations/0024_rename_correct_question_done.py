@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0023_game_length'),
+        ('birdr', '0023_game_length'),
     ]
 
     operations = [

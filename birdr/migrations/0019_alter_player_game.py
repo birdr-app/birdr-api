@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0018_player_ip'),
+        ('birdr', '0018_player_ip'),
     ]
 
     operations = [

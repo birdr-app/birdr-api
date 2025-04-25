@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0036_remove_question_options_alter_answer_player_and_more'),
+        ('birdr', '0036_remove_question_options_alter_answer_player_and_more'),
     ]
 
     operations = [

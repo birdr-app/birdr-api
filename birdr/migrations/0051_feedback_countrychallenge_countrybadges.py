@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0050_flagquestion'),
+        ('birdr', '0050_flagquestion'),
     ]
 
     operations = [

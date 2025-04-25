@@ -1,14 +1,14 @@
 from django.db import migrations
 
 def copy_translations(apps, schema_editor):
-    ChallengeLevel = apps.get_model('', 'ChallengeLevel')
+    ChallengeLevel = apps.get_model('birdr', 'ChallengeLevel')
     for level in ChallengeLevel.objects.all():
         level.title_nl = level.title
         level.description_nl = level.description
         level.save()
 
 def reverse_copy_translations(apps, schema_editor):
-    ChallengeLevel = apps.get_model('', 'ChallengeLevel')
+    ChallengeLevel = apps.get_model('birdr', 'ChallengeLevel')
     for level in ChallengeLevel.objects.all():
         level.title_nl = None
         level.description_nl = None
@@ -17,7 +17,7 @@ def reverse_copy_translations(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0066_alter_countrygame_options_and_more'),
+        ('birdr', '0066_alter_countrygame_options_and_more'),
     ]
 
     operations = [

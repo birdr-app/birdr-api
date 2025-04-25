@@ -5,9 +5,9 @@ from django.db.models import Sum
 
 
 def migrate_scores(apps, schema_editor):
-    Player = apps.get_model('', 'Player')
-    Game = apps.get_model('', 'Game')
-    PlayerScore = apps.get_model('', 'PlayerScore')
+    Player = apps.get_model('birdr', 'Player')
+    Game = apps.get_model('birdr', 'Game')
+    PlayerScore = apps.get_model('birdr', 'PlayerScore')
 
     for player in Player.objects.all():
         game_ids = player.answers.values_list('question__game_id', flat=True)
@@ -25,7 +25,7 @@ def migrate_scores(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0041_remove_player_game_alter_answer_question_playerscore'),
+        ('birdr', '0041_remove_player_game_alter_answer_question_playerscore'),
     ]
 
     operations = [

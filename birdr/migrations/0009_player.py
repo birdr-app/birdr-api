@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0008_game_level_alter_question_game_and_more'),
+        ('birdr', '0008_game_level_alter_question_game_and_more'),
     ]
 
     operations = [

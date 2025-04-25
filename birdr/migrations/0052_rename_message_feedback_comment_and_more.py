@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0051_feedback_countrychallenge_countrybadges'),
+        ('birdr', '0051_feedback_countrychallenge_countrybadges'),
     ]
 
     operations = [

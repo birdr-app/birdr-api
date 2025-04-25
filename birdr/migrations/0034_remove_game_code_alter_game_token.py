@@ -7,7 +7,7 @@ import shortuuid.django_fields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0033_game_media_game_repeat'),
+        ('birdr', '0033_game_media_game_repeat'),
     ]
 
     operations = [

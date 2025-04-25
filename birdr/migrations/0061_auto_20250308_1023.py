@@ -4,7 +4,7 @@ from django.db import migrations
 
 
 def create_challenge_levels(apps, schema_editor):
-    ChallengeLevel = apps.get_model('', 'ChallengeLevel')
+    ChallengeLevel = apps.get_model('birdr', 'ChallengeLevel')
     ChallengeLevel.objects.all().delete()
 
     LEVELS = [
@@ -105,7 +105,7 @@ def create_challenge_levels(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0060_challengelevel_sequence_alter_challengelevel_level'),
+        ('birdr', '0060_challengelevel_sequence_alter_challengelevel_level'),
     ]
 
     operations = [

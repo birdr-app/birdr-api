@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0021_rename_code_player_token'),
+        ('birdr', '0021_rename_code_player_token'),
     ]
 
     operations = [

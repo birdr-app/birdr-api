@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0058_remove_countrychallenge_level_countrygame'),
+        ('birdr', '0058_remove_countrychallenge_level_countrygame'),
     ]
 
     operations = [

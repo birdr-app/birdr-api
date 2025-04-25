@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0020_alter_player_code'),
+        ('birdr', '0020_alter_player_code'),
     ]
 
     operations = [

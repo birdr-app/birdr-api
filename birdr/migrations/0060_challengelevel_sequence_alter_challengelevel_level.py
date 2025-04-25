@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0059_countrygame_challenge_level'),
+        ('birdr', '0059_countrygame_challenge_level'),
     ]
 
     operations = [

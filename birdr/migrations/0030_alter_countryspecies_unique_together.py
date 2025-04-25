@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0029_alter_answer_unique_together'),
+        ('birdr', '0029_alter_answer_unique_together'),
     ]
 
     operations = [

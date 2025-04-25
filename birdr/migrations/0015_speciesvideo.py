@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0014_rename_speciessounds_speciessound'),
+        ('birdr', '0014_rename_speciessounds_speciessound'),
     ]
 
     operations = [

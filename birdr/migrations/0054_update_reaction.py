@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('', '0053_countrychallenge_level_speciesimage_contributor_and_more'),
+        ('birdr', '0053_countrychallenge_level_speciesimage_contributor_and_more'),
     ]
 
     operations = [

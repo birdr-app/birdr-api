@@ -20,14 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ds-@$v6b_arl76ud+m*lzyk2qn0%3+xcyxcfu#i53sxt_lw-48'
+SECRET_KEY = 'testing-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '.be'
+    'localhost',    
 ]
 
 
@@ -49,7 +48,7 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'social_django',
     'rest_framework_social_oauth2',
-    ''
+    'birdr'
 ]
 
 MIDDLEWARE = [
@@ -63,7 +62,7 @@ MIDDLEWARE = [
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = '.urls'
+ROOT_URLCONF = 'birdr.urls'
 
 TEMPLATES = [
     {
@@ -81,8 +80,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '.wsgi.application'
-ASGI_APPLICATION = ".asgi.application"
+WSGI_APPLICATION = 'birdr.wsgi.application'
+ASGI_APPLICATION = "birdr.asgi.application"
 
 CHANNEL_LAYERS = {
     "default": {

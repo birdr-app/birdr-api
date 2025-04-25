@@ -1,7 +1,7 @@
 from django.db import migrations
 
 def create_challenge_levels(apps, schema_editor):
-    ChallengeLevel = apps.get_model('', 'ChallengeLevel')
+    ChallengeLevel = apps.get_model('birdr', 'ChallengeLevel')
     
     LEVELS = [
         {
@@ -90,12 +90,12 @@ def create_challenge_levels(apps, schema_editor):
         ChallengeLevel.objects.create(**level_data)
 
 def remove_challenge_levels(apps, schema_editor):
-    ChallengeLevel = apps.get_model('', 'ChallengeLevel')
+    ChallengeLevel = apps.get_model('birdr', 'ChallengeLevel')
     ChallengeLevel.objects.all().delete()
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('', '0055_alter_countryspecies_options_and_more'),  # Replace with the actual previous migration
+        ('birdr', '0055_alter_countryspecies_options_and_more'),  # Replace with the actual previous migration
     ]
 
     operations = [

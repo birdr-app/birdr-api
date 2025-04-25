@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('', '0052_rename_message_feedback_comment_and_more'),
+        ('birdr', '0052_rename_message_feedback_comment_and_more'),
     ]
 
     operations = [
